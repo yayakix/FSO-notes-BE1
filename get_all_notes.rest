@@ -1,0 +1,11 @@
+GET http://localhost:3001/api/notes/
+###
+Post http://localhost:3001/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bob Abramov",
+    "number": "3"
+}
+###
+DELETE  http://localhost:3001/persons/4/
