@@ -3,6 +3,7 @@ const app = express();
 
 // Allows us to access the body
 app.use(express.json());
+app.use(express.static("dist"));
 
 const cors = require("cors");
 
@@ -81,3 +82,9 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// 27255;
+// iyanaslaptop@Iyanas-Air-4 express-lesson-1 % ssh-add -l -E sha256
+// 3072 SHA256:lQek9hTrSyyOUkXAJWnTzWU5YCDkKF4LG0DV/VvJT5k iyanaslaptop@Iyanas-MacBook-Air.local (RSA)
+// -rw-------   1 iyanaslaptop  staff  2635 Mar 25  2022 id_rsa
+// -rw-r--r--@  1 iyanaslaptop  staff   571 Mar 25  2022 id_rsa.pub
